@@ -1,12 +1,14 @@
 <!-- Listado Tareas -->
 
-<h3 class="text-body">{{$ctrl.titulo}}</h3>
+<h3 class="text-light">{{$ctrl.titulo}}</h3>
+<br>
 
-<div class="d-flex align-items-center border p-2 mb-2 bg-light form-row">
+<div class="d-flex align-items-center p-2 mb-2 form-row rounded">
     <input class="form-control mr-2 col-4" ng-model="$ctrl.descTarea" type="text"
         placeholder="Escriba la descripcion de la nueva tarea" autofocus>
     <button class="btn btn-primary col-2" ng-focus="" ng-click="$ctrl.crearTarea()">+ Nueva tarea</button>
-    <span class="offset-2 mr-2">Filtrar por:</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="offset-2 mr-2 text-light"><strong>Filtrar por:</strong></span>
     <select id="combo" class="custom-select mr-2 col-2" ng-model="busqueda.completed">
         <option value="">Todas las tareas</option>
         <option value="true">Tareas completadas</option>
@@ -24,12 +26,12 @@
 <!-- Lista de tareas -->
 <ul class="list-group">
     <!-- For each de cada tarea -->
-    <li class="list-group-item" ng-repeat="tarea in $ctrl.tareas | filter:busqueda">
+    <li class="list-group-item translucido" ng-repeat="tarea in $ctrl.tareas | filter:busqueda">
         <!-- Distintivo que enumera las tareas -->
         <span class="badge badge-{{(tarea.completed)?'secondary':'primary'}}">{{tarea.id}}</span>
 
         <!-- Input donde se muestra la descripcion de la tarea -->
-        <input type="text" size="100" class="{{(tarea.completed)?'tachado':''}} border{{(mostrarEditar)?'':'-0'}}"
+        <input type="text" size="100" class="translucido {{(tarea.completed)?'tachado':''}} border{{(mostrarEditar)?'':'-0'}}"
             ng-model="tarea.task" ng-readonly="!mostrarEditar">
 
         <!-- Botones de Guardar o Cancelar la edición -->

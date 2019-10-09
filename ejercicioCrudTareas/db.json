@@ -17,7 +17,7 @@
     },
     {
       "id": 4,
-      "completed": false,
+      "completed": true,
       "task": "Poner bonita imagen background"
     },
     {
@@ -36,13 +36,13 @@
       "id": 9
     },
     {
-      "completed": false,
+      "completed": true,
       "task": "Buscar por nombre",
       "id": 10
     },
     {
-      "completed": false,
-      "task": "Filtrar por tareas completadas o no completadas",
+      "completed": true,
+      "task": "Filtrar por tareas completadas o pendientes",
       "id": 11
     }
   ],
