@@ -2,7 +2,7 @@
 <html ng-app="angularApp" ng-controller="mainCtrl">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Universidad</title>
+        <title>Angular JS</title>
 
 
         <!-- Incluir Bootstrap -->
@@ -33,11 +33,12 @@
         <script src="js/components/calificacion/componente-calificacion.js"></script>
         <script src="js/components/menu/menu.js"></script>
         <script src="js/components/alert/componente-alert.js"></script>
+        <script src="js/components/tabla/componente-tabla.js"></script>
     </head>
     <body>
         <componente-menu></componente-menu>
 
-        <componente-alerta clase="info" texto="Ongi Etorri!"></componente-alerta>
+        <componente-alerta ng-hide=(!alerta) clase="{{alerta.clase}}" texto="{{alerta.texto}}"></componente-alerta>
 
         <div class="container">
         <!-- La pagina principal ira aquí -->

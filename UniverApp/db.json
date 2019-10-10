@@ -2,48 +2,63 @@
   "frutas": [
     {
       "id": 1,
-      "completed": true,
-      "task": "Pagar multa... otra vez"
+      "unidades": 5,
+      "nombre": "Pera",
+      "icon": "pera.jpg"
     },
     {
       "id": 2,
-      "completed": true,
-      "task": "Tomar mango loco a las 11"
+      "unidades": 6,
+      "nombre": "Manzana",
+      "icon": "manzana.jpg"
     },
     {
       "id": 3,
-      "completed": true,
-      "task": "Ducharse a las 7, guarro"
+      "unidades": 3,
+      "nombre": "Melocoton",
+      "icon": "melocoton.jpg"
     },
     {
       "id": 4,
-      "completed": true,
-      "task": "Poner bonita imagen background"
+      "unidades": 99,
+      "nombre": "Mango Loco",
+      "icon": "mango.jpg"
     },
     {
       "id": 5,
-      "completed": false,
-      "task": "Poner autofocus a la caja de texto"
+      "unidades": 8,
+      "nombre": "Platano",
+      "icon": "platano.jpg"
     },
     {
-      "completed": true,
-      "task": "Terminar eliminar",
-      "id": 7
+      "id": 6,
+      "unidades": 4,
+      "nombre": "Sandia",
+      "icon": "sandia.jpg"
     },
     {
-      "completed": true,
-      "task": "Poder marcar tarea completada",
-      "id": 9
+      "id": 7,
+      "unidades": 2,
+      "nombre": "Melón",
+      "icon": "melon.jpg"
     },
     {
-      "completed": true,
-      "task": "Buscar por nombre",
-      "id": 10
+      "id": 8,
+      "unidades": 9,
+      "nombre": "Coco",
+      "icon": "coco.jpg"
     },
     {
-      "completed": true,
-      "task": "Filtrar por tareas completadas o pendientes",
-      "id": 11
+      "id": 9,
+      "unidades": 8,
+      "nombre": "Albaricoque",
+      "icon": "albaricoque.jpg"
+    },
+    {
+      "id": 10,
+      "unidades": 8,
+      "nombre": "Tomate",
+      "icon": "tomate.jpg"
     }
   ],
   "posts": [
