@@ -8,22 +8,26 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
         $scope.rutas = [{
                 "nombre": "Inicio",
                 "url": "#!/",
-                "active": true
+                "active": true,
+                "icon": "fas fa-home"
             },
             {
-                "nombre": "Profesores",
-                "url": "#!/profesores",
-                "active": false
+                "nombre": "Frutas",
+                "url": "#!/frutas",
+                "active": false,
+                "icon": "fab fa-apple"
             },
             {
-                "nombre": "Alumno",
-                "url": "#!/alumnos",
-                "active": false
+                "nombre": "Componentes",
+                "url": "#!/componentes",
+                "active": false,
+                "icon": "fas fa-window-restore"
             },
             {
                 "nombre": "Creditos",
                 "url": "#!/creditos",
-                "active": false
+                "active": false,
+                "icon": "fab fa-creative-commons"
             }
         ];
 

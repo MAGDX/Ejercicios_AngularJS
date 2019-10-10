@@ -5,11 +5,11 @@ app.config(function ($routeProvider) {
     .when('/', {
       templateUrl: 'parciales/home.html'
     })
-    .when('/alumnos', {
-      templateUrl: 'parciales/alumnos.html'
+    .when('/frutas', {
+      templateUrl: 'parciales/frutas.html'
     })
-    .when('/profesores', {
-      templateUrl: 'parciales/profesores.html'
+    .when('/componentes', {
+      templateUrl: 'parciales/componentes.html'
     })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'

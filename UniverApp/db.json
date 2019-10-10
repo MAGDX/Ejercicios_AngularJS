@@ -1,0 +1,66 @@
+{
+  "frutas": [
+    {
+      "id": 1,
+      "completed": true,
+      "task": "Pagar multa... otra vez"
+    },
+    {
+      "id": 2,
+      "completed": true,
+      "task": "Tomar mango loco a las 11"
+    },
+    {
+      "id": 3,
+      "completed": true,
+      "task": "Ducharse a las 7, guarro"
+    },
+    {
+      "id": 4,
+      "completed": true,
+      "task": "Poner bonita imagen background"
+    },
+    {
+      "id": 5,
+      "completed": false,
+      "task": "Poner autofocus a la caja de texto"
+    },
+    {
+      "completed": true,
+      "task": "Terminar eliminar",
+      "id": 7
+    },
+    {
+      "completed": true,
+      "task": "Poder marcar tarea completada",
+      "id": 9
+    },
+    {
+      "completed": true,
+      "task": "Buscar por nombre",
+      "id": 10
+    },
+    {
+      "completed": true,
+      "task": "Filtrar por tareas completadas o pendientes",
+      "id": 11
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
