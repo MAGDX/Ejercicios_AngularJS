@@ -61,6 +61,38 @@
       "icon": "tomate.jpg"
     }
   ],
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Veronic",
+      "nota": "0",
+      "calificacion": "Suspenso"
+    },
+    {
+      "id": 2,
+      "nombre": "Eder Serna",
+      "nota": "3",
+      "calificacion": "Insuficiente"
+    },
+    {
+      "id": 3,
+      "nombre": "Jon Antolin",
+      "nota": "8",
+      "calificacion": "Notable"
+    },
+    {
+      "id": 4,
+      "nombre": "Borja",
+      "nota": "6",
+      "calificacion": "Bien"
+    },
+    {
+      "id": 5,
+      "nombre": "ARK",
+      "nota": "10",
+      "calificacion": "Sobresaliente"
+    }
+  ],
   "posts": [
     {
       "id": 1,

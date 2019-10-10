@@ -1,8 +1,24 @@
 <!-- Componente Boton -->
 
-<button class="mr-1" ng-click="$ctrl.bajarNota()">{{$ctrl.resta}}</button>
-    <span class="p-4 mr-2">Nota: {{$ctrl.nota}}</span>
-<button class="mr-3" ng-click="$ctrl.subirNota()">{{$ctrl.suma}}</button>
-<strong>{{$ctrl.calificacion}}</strong>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th class="align-middle">Alumno</th>
+            <th class="align-middle text-center">Nota</th>
+            <th class="align-middle">Clasificación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="alumno in $ctrl.alumnos">
+            <td class="align-middle">{{alumno.nombre}}</td>
+            <td class="d-flex justify-content-center align-middle">
+                <button class="btn btn-light border-secondary" ng-click="$ctrl.bajarNota(alumno.nota)">{{$ctrl.resta}}</button>
+                <span class="p-2 mr-2">Nota: {{alumno.nota}}</span>
+                <button class="btn btn-light border-secondary" ng-click="$ctrl.subirNota(alumno.nota)">{{$ctrl.suma}}</button>
+            </td>
+            <td class="align-middle"><strong>{{alumno.calificacion}}</strong></td>
+        </tr>
+    </tbody>
+</table>
 
 <!-- End Componente Boton -->

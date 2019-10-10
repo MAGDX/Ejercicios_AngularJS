@@ -11,6 +11,9 @@ app.config(function ($routeProvider) {
     .when('/componentes', {
       templateUrl: 'parciales/componentes.html'
     })
+    .when('/alumnos', {
+      templateUrl: 'parciales/alumnos.html'
+    })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'
     })
