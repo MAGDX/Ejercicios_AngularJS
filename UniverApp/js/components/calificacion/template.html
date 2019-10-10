@@ -12,13 +12,15 @@
         <tr ng-repeat="alumno in $ctrl.alumnos">
             <td class="align-middle">{{alumno.nombre}}</td>
             <td class="d-flex justify-content-center align-middle">
-                <button class="btn btn-light border-secondary" ng-click="$ctrl.bajarNota(alumno.nota)">{{$ctrl.resta}}</button>
+                <button class="btn btn-light border-secondary" ng-click="$ctrl.bajarNota(alumno)">{{$ctrl.resta}}</button>
                 <span class="p-2 mr-2">Nota: {{alumno.nota}}</span>
-                <button class="btn btn-light border-secondary" ng-click="$ctrl.subirNota(alumno.nota)">{{$ctrl.suma}}</button>
+                <button class="btn btn-light border-secondary" ng-click="$ctrl.subirNota(alumno)">{{$ctrl.suma}}</button>
             </td>
             <td class="align-middle"><strong>{{alumno.calificacion}}</strong></td>
         </tr>
     </tbody>
 </table>
+
+<button class="btn btn-outline-primary" ng-click="$ctrl.guardarNotas()">Guardar notas</button>
 
 <!-- End Componente Boton -->

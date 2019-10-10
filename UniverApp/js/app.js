@@ -6,7 +6,7 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
         console.log('onInit MainCtrl');
 
         // Check para saber si esta el servicio REST levantado
-        let url = 'http://localhost:3000/frutas';
+        let url = 'http://localhost:3000';
 
         /*$scope.alerta = {
             "texto" : "<strong>Ongi etorri!</strong>",

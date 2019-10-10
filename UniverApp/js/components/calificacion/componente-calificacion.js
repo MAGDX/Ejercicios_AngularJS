@@ -4,7 +4,7 @@ component('componenteCalificacion', { // nombre componente => para usarlo <compo
   templateUrl: './js/components/calificacion/template.html',
   controller: function ComponenteCalificacionController($http) {
     console.trace('Calificacion Controller');
-    const ENDPOINT = "http://localhost:3000/alumnos";
+    const ENDPOINT = "http://localhost:3000/alumnos/";
     const NOTA_MAX = 10;
     const NOTA_MIN = 0;
     this.suma = "+";
@@ -34,75 +34,80 @@ component('componenteCalificacion', { // nombre componente => para usarlo <compo
     this.guardarNotas = function () {
       console.trace('click guardarNotas');
 
-      $http.post(ENDPOINT, $self.alumnos).then(function (response) {
-        console.trace('Posteamos');
-      }, function (response) {
-        console.warn('Tenemos un error, response: %o', response);
-        $scope.alerta = {
-          "texto": "<strong>ERROR " + response.status + ":</strong> Fallo al obtener los alumnos",
-          "clase": "danger"
-        }
+      $self.alumnos.forEach(function (alumno, index) {
+
+        let url = ENDPOINT + alumno.id;
+
+        $http.put(url, alumno).then(function (response) {
+          console.trace('Puteamos');
+        }, function (response) {
+          console.warn('Tenemos un error, response: %o', response);
+          $scope.alerta = {
+            "texto": "<strong>ERROR " + response.status + ":</strong> Fallo al obtener los alumnos",
+            "clase": "danger"
+          }
+        });
       });
     } // End guardarNotas
 
-    this.subirNota = function (nota) {
+    this.subirNota = function (alumno) {
       console.trace('Funcion Subir Nota');
 
-      if (this.nota < NOTA_MAX) {
-        this.nota++;
+      if (alumno.nota < NOTA_MAX) {
+        alumno.nota++;
+        this.ponerCalificacion(alumno);
       }
-      this.ponerCalificacion();
     }
 
-    this.bajarNota = function (nota) {
+    this.bajarNota = function (alumno) {
       console.trace('Funcion Bajar Nota');
 
-      if (this.nota > NOTA_MIN) {
-        this.nota--;
+      if (alumno.nota > NOTA_MIN) {
+        alumno.nota--;
+        this.ponerCalificacion(alumno);
       }
-      this.ponerCalificacion(this.nota);
     }
 
-    this.ponerCalificacion = function (nota) {
+    this.ponerCalificacion = function (alumno) {
 
       console.trace('Funcion Poner Calificacion');
 
-      switch (this.nota) {
+      switch (alumno.nota) {
         case 0:
-          this.calificacion = "Suspenso";
+          alumno.calificacion = "Suspenso";
           break;
         case 1:
-          this.calificacion = "Insuficiente";
+          alumno.calificacion = "Insuficiente";
           break;
         case 2:
-          this.calificacion = "Insuficiente";
+          alumno.calificacion = "Insuficiente";
           break;
         case 3:
-          this.calificacion = "Insuficiente";
+          alumno.calificacion = "Insuficiente";
           break;
         case 4:
-          this.calificacion = "Insuficiente";
+          alumno.calificacion = "Insuficiente";
           break;
         case 5:
-          this.calificacion = "Suficiente";
+          alumno.calificacion = "Suficiente";
           break;
         case 6:
-          this.calificacion = "Bien";
+          alumno.calificacion = "Bien";
           break;
         case 7:
-          this.calificacion = "Notable";
+          alumno.calificacion = "Notable";
           break;
         case 8:
-          this.calificacion = "Notable";
+          alumno.calificacion = "Notable";
           break;
         case 9:
-          this.calificacion = "Sobresaliente";
+          alumno.calificacion = "Sobresaliente";
           break;
         case 10:
-          this.calificacion = "Sobresaliente";
+          alumno.calificacion = "Sobresaliente";
           break;
         default:
-          this.calificacion = "Error: nota no valida!";
+          alumno.calificacion = "Error: nota no valida!";
       } // End Switch
     } // End Function
   } // End Controllador

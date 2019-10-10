@@ -65,31 +65,31 @@
     {
       "id": 1,
       "nombre": "Veronic",
-      "nota": "0",
+      "nota": 0,
       "calificacion": "Suspenso"
     },
     {
       "id": 2,
       "nombre": "Eder Serna",
-      "nota": "3",
-      "calificacion": "Insuficiente"
+      "nota": 6,
+      "calificacion": "Bien"
     },
     {
       "id": 3,
       "nombre": "Jon Antolin",
-      "nota": "8",
-      "calificacion": "Notable"
+      "nota": 10,
+      "calificacion": "Sobresaliente"
     },
     {
       "id": 4,
       "nombre": "Borja",
-      "nota": "6",
-      "calificacion": "Bien"
+      "nota": 8,
+      "calificacion": "Notable"
     },
     {
       "id": 5,
       "nombre": "ARK",
-      "nota": "10",
+      "nota": 10,
       "calificacion": "Sobresaliente"
     }
   ],
