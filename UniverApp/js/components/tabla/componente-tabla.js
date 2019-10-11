@@ -10,17 +10,18 @@ component('componenteTabla', { // nombre componente => para usarlo <componente-t
     $self = this;
 
     $self.frutas={};
-
+    
     this.$onInit = function () {
-      $http.get(url).then(function (result) {
-        console.trace('onInit Tabla %o', result);
+      $http.get(url).then(function (response) {
+        console.trace('onInit Tabla');
 
-        $self.frutas = result.data;
-      }, function (result) {
-        console.trace('Error al llamar al Servicio REST');
+        $self.frutas = response.data;
+
+      }, function (response) {
+        console.trace('Error al llamar al Servicio REST: %o', response);
 
         $scope.alerta = {
-          "texto": "<strong>ERROR!</strong> Fallo al obtener las frutas",
+          "texto": "<strong>ERROR " + response.status + ":</strong> Fallo al obtener las frutas",
           "clase": "danger"
         }
       }); // End GET

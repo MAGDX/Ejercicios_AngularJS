@@ -2,61 +2,61 @@
   "frutas": [
     {
       "id": 1,
-      "unidades": 5,
+      "precio": 2.3,
       "nombre": "Pera",
       "icon": "pera.jpg"
     },
     {
       "id": 2,
-      "unidades": 6,
+      "precio": 3.2,
       "nombre": "Manzana",
       "icon": "manzana.jpg"
     },
     {
       "id": 3,
-      "unidades": 3,
+      "precio": 1.2,
       "nombre": "Melocoton",
       "icon": "melocoton.jpg"
     },
     {
       "id": 4,
-      "unidades": 99,
+      "precio": 99.99,
       "nombre": "Mango Loco",
       "icon": "mango.jpg"
     },
     {
       "id": 5,
-      "unidades": 8,
+      "precio": 0.3,
       "nombre": "Platano",
       "icon": "platano.jpg"
     },
     {
       "id": 6,
-      "unidades": 4,
+      "precio": 4.6,
       "nombre": "Sandia",
       "icon": "sandia.jpg"
     },
     {
       "id": 7,
-      "unidades": 2,
+      "precio": 1.6,
       "nombre": "Melón",
       "icon": "melon.jpg"
     },
     {
       "id": 8,
-      "unidades": 9,
+      "precio": 6.8,
       "nombre": "Coco",
       "icon": "coco.jpg"
     },
     {
       "id": 9,
-      "unidades": 8,
+      "precio": 0.5,
       "nombre": "Albaricoque",
       "icon": "albaricoque.jpg"
     },
     {
       "id": 10,
-      "unidades": 8,
+      "precio": 4.9,
       "nombre": "Tomate",
       "icon": "tomate.jpg"
     }
@@ -65,32 +65,32 @@
     {
       "id": 1,
       "nombre": "Veronic",
-      "nota": 0,
-      "calificacion": "Suspenso"
+      "nota": 4,
+      "calificacion": "Insuficiente"
     },
     {
       "id": 2,
       "nombre": "Eder Serna",
-      "nota": 6,
-      "calificacion": "Bien"
+      "nota": 5,
+      "calificacion": "Suficiente"
     },
     {
       "id": 3,
       "nombre": "Jon Antolin",
-      "nota": 10,
-      "calificacion": "Sobresaliente"
+      "nota": 7,
+      "calificacion": "Notable"
     },
     {
       "id": 4,
       "nombre": "Borja",
-      "nota": 8,
-      "calificacion": "Notable"
+      "nota": 10,
+      "calificacion": "Sobresaliente"
     },
     {
       "id": 5,
       "nombre": "ARK",
-      "nota": 10,
-      "calificacion": "Sobresaliente"
+      "nota": 5,
+      "calificacion": "Suficiente"
     }
   ],
   "posts": [

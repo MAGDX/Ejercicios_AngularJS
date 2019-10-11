@@ -6,7 +6,7 @@ app.config(function ($routeProvider) {
       templateUrl: 'parciales/home.html'
     })
     .when('/frutas', {
-      templateUrl: 'parciales/frutas.html'
+      template: '<componente-tabla></componente-tabla>'
     })
     .when('/componentes', {
       templateUrl: 'parciales/componentes.html'
