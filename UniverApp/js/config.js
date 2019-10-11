@@ -14,6 +14,12 @@ app.config(function ($routeProvider) {
     .when('/alumnos', {
       templateUrl: 'parciales/alumnos.html'
     })
+    .when('/programacion-funcional', {
+      templateUrl: 'parciales/programacion-funcional.html'
+    })
+    .when('/contratos', {
+      template: '<componente-contratos></componente-contratos>'
+    })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'
     })

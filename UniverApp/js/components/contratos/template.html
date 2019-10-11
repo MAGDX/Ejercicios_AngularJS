@@ -1,0 +1,39 @@
+<!-- Componente Contratos -->
+
+{{$ctrl.contratos | limitTo: 5 }}
+
+<h2>Ejercicio Real con Contratos</h2>
+<hr>
+
+<p>Para poder jugar con filter y map se pide:</p>
+<ol>
+    <li class="">
+        Obtengan todos los contratos cuyo campo TIPPRODUCT tenga un valor determinado, por ejemplo “KT” (filter)
+    </li>
+    <li class="">
+        Obtengan un nuevo array en el que cada elemento contenga el código de contrato concatenado con el digito de control (campos codCONTRAT y digContrat), además del saldo en euros (campo SALCONTRAT dividido entre 100) (map)
+    </li>
+    <li class="">
+        Obtengan todos los contratos que en su campo acciones contengan la clave “SITUACION” (filter por la subestructura)
+    </li>
+    <li class="">
+        Obtengan un array que contenga todas las acciones posibles (map y spread)
+    </li>
+    <li class="">
+        Combinaciones de las anteriores, etc
+    </li>
+</ol>
+
+<p class="text-danger">En todo lo anterior no pueden usar bucles for ni foreach, por supuesto </p>
+
+<h4>Ejercicio 1</h4>
+
+{{$ctrl.tipoProducto}}
+
+<pre>
+    <code>
+
+    </code>
+</pre>
+
+<!-- End Componente Contratos -->

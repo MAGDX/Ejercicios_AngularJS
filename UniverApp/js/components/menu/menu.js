@@ -24,6 +24,12 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-window-restore"
             },
             {
+                "nombre": "Programación Funcional",
+                "url": "#!/programacion-funcional",
+                "active": false,
+                "icon": "fas fa-laptop-code"
+            },
+            {
                 "nombre": "Creditos",
                 "url": "#!/creditos",
                 "active": false,

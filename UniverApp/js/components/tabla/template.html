@@ -2,7 +2,14 @@
 <h1>Frutas</h1>
 <hr>
 
-<input class="form-control mb-2 col-4" ng-model="busqueda.nombre" type="text" placeholder="Escriba la fruta a buscar">
+<div class="d-flex pl-1 mb-2 form-row rounded">
+  <input class="form-control mb-2 mr-2 col-4 align-middle" ng-model="busqueda.nombre" type="text" placeholder="Escriba la fruta a buscar">
+
+  <select id="combo" class="custom-select mr-2 col-2 align-middle" ng-model="busqueda.color">
+    <option value="">Seleccione un color...</option>
+    <option ng-repeat="c in $ctrl.colores" ng-model="busqueda.color = c">{{c}}</option>
+  </select>
+</div>
 
 <div class="btn-toolbar mb-2 border justify-content-center" role="toolbar">
   <div class="btn-group mr-2" role="group" aria-label="Grupo anterior">
@@ -23,12 +30,15 @@
     <tr>
       <th scope="col" ng-click="ordenar = 'id'; orden = !orden">ID</th>
       <th scope="col">Foto</th>
-      <th scope="col" ng-click="ordenar = 'nombre'; orden = !orden">Fruta <i ng-hide="{{(ordenar == 'nombre')?true:false}}" class="fas fa-sort-{{(orden)?'up':'down'}}"></i></th>
-      <th scope="col" ng-click="ordenar = 'precio'; orden = !orden">Precio (€) <i class="fas fa-sort-{{(orden)?'up':'down'}}"></i></th>
+      <th scope="col" ng-click="ordenar = 'nombre'; orden = !orden">Fruta <i
+          ng-hide="{{(ordenar == 'nombre')?true:false}}" class="fas fa-sort-{{(orden)?'up':'down'}}"></i></th>
+      <th scope="col" ng-click="ordenar = 'precio'; orden = !orden">Precio (€) <i
+          class="fas fa-sort-{{(orden)?'up':'down'}}"></i></th>
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="fruta in $ctrl.frutas | filter : busqueda | orderBy:ordenar:orden | limitTo : pagina*3 | limitTo : -3">
+    <tr
+      ng-repeat="fruta in $ctrl.frutas | filter : busqueda | orderBy:ordenar:orden | limitTo : pagina*3 | limitTo : -3">
       <td class="align-middle">{{fruta.id}}</td>
       <td class="align-middle"><img width="100" height="100" ng-src="img/{{fruta.icon}}" alt="{{fruta.nombre}}"></td>
       <td class="align-middle">{{fruta.nombre}}</td>

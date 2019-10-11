@@ -9,14 +9,17 @@ component('componenteTabla', { // nombre componente => para usarlo <componente-t
 
     $self = this;
 
-    $self.frutas={};
-    
+    $self.frutas = {};
+
     this.$onInit = function () {
       $http.get(url).then(function (response) {
         console.trace('onInit Tabla');
 
         $self.frutas = response.data;
 
+        $self.colores = response.data.map((v) => v.color ).filter((v, i, a) => {
+          return a.indexOf(v) === i
+        });
       }, function (response) {
         console.trace('Error al llamar al Servicio REST: %o', response);
 
