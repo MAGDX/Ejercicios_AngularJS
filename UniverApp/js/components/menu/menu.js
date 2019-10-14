@@ -30,6 +30,12 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-laptop-code"
             },
             {
+                "nombre": "Promesas",
+                "url": "#!/promesas",
+                "active": false,
+                "icon": "fas fa-pray"
+            },
+            {
                 "nombre": "Creditos",
                 "url": "#!/creditos",
                 "active": false,

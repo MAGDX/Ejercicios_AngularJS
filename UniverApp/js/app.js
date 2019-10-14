@@ -1,8 +1,8 @@
-var app = angular.module('angularApp',['ngRoute', 'ngSanitize']);
+var app = angular.module('angularApp', ['ngRoute', 'ngSanitize']);
 
-app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
+app.controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
 
-    this.$onInit = function(){
+    this.$onInit = function () {
         console.log('onInit MainCtrl');
 
         // Check para saber si esta el servicio REST levantado
@@ -13,25 +13,18 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
             "clase" : "info"
         }*/
 
-        $http.get(url).then(function(result){
+        $http.get(url).then(function (result) {
             console.trace('servicio rest funcionando');
             /*$scope.alerta = {
                 "texto" : "<strong>FUNCIONA!</strong> El Servicio REST esta operativo",
                 "clase" : "success"
             }*/
-        },function(result){
+        }, function (result) {
             console.trace('servicio rest no funcionando');
             $scope.alerta = {
-                "texto" : "<strong>ERROR!</strong> El Servicio REST NO esta operativo",
-                "clase" : "danger"
+                "texto": "<strong>ERROR!</strong> El Servicio REST NO esta operativo",
+                "clase": "danger"
             }
         });
     }
 }]);
-
-/*app.controller('frutasController', ['$scope','$http', function($scope,$http){
-
-    this.$onInit = function(){
-        console.log('onInit frutasController');
-    }
-}]);*/

@@ -1,7 +1,5 @@
 <!-- Componente Contratos -->
 
-{{$ctrl.contratos | limitTo: 5 }}
-
 <h2>Ejercicio Real con Contratos</h2>
 <hr>
 
@@ -11,10 +9,12 @@
         Obtengan todos los contratos cuyo campo TIPPRODUCT tenga un valor determinado, por ejemplo “KT” (filter)
     </li>
     <li class="">
-        Obtengan un nuevo array en el que cada elemento contenga el código de contrato concatenado con el digito de control (campos codCONTRAT y digContrat), además del saldo en euros (campo SALCONTRAT dividido entre 100) (map)
+        Obtengan un nuevo array en el que cada elemento contenga el código de contrato concatenado con el digito de
+        control (campos codCONTRAT y digContrat), además del saldo en euros (campo SALCONTRAT dividido entre 100) (map)
     </li>
     <li class="">
-        Obtengan todos los contratos que en su campo acciones contengan la clave “SITUACION” (filter por la subestructura)
+        Obtengan todos los contratos que en su campo acciones contengan la clave “SITUACION” (filter por la
+        subestructura)
     </li>
     <li class="">
         Obtengan un array que contenga todas las acciones posibles (map y spread)
@@ -24,16 +24,147 @@
     </li>
 </ol>
 
+<p>Número total de Contratos: <strong>{{$ctrl.contratos.length}}</strong></p>
+
 <p class="text-danger">En todo lo anterior no pueden usar bucles for ni foreach, por supuesto </p>
 
-<h4>Ejercicio 1</h4>
+<div class="accordion mb-5" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0 text-center">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Ejercicio 1</strong>
+                    <br>
+                    Numero de Contratos: <strong>{{$ctrl.ejercicio1.length}}</strong>
+                </button>
+            </h2>
+        </div>
 
-{{$ctrl.tipoProducto}}
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        $self.ejercicio1 = $self.contratos.filter(v=> v.TIPPRODUCT == "KT");
+                    </code>
+                </pre>
 
-<pre>
-    <code>
+                {{$ctrl.ejercicio1}}
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Ejercicio 2</strong>
+                    <br>
+                    Numero de Contratos: <strong>{{$ctrl.ejercicio2.length}}</strong>
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        $self.ejercicio2 = $self.contratos.map( e => {
+                            let cc;
+                            if( e.codContrat == undefined || e.digContrat == undefined){
+                            cc = "";
+                            } else{
+                            cc = e.codContrat.toString() + e.digContrat.toString();
+                            }
+                            return{
+                                "codigoContrato": cc,
+                                "saldo": (e.SALCONTRAT / 100)
+                            }
+                        }).filter( e => {
+                            return ( e.codigoContrato != "" && e.saldo > 0 );
+                        });
+                    </code>
+                </pre>
 
-    </code>
-</pre>
+                {{$ctrl.ejercicio2}}
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Ejercicio 3</strong>
+                    <br>
+                    Numero de Contratos: <strong>{{$ctrl.ejercicio3.length}}</strong>
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        $self.ejercicio3 = $self.contratos.filter(v => {
+                            if (v.ACCIONES != undefined) {
+                                let result = v.ACCIONES.filter(e => e.clave == "SITUACION");
+                                return (result.length == 1);
+                            }
+                            return false;
+                        });
+                    </code>
+                </pre>
+
+                {{$ctrl.ejercicio3}}
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Ejercicio 4</strong>
+                    <br>
+                    Numero de Contratos: <strong>{{$ctrl.ejercicio4.length}}</strong>
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        
+                    </code>
+                </pre>
+
+                {{$ctrl.ejercicio4}}
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFive">
+            <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="false" aria-controls="collapseFive">
+                    <strong>Ejercicio 5</strong>
+                    <br>
+                    Numero de Contratos: <strong>{{$ctrl.ejercicio5.length}}</strong>
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    {{$ctrl.contratos | json }}
+                </pre>
+                <pre>
+                    <code>
+                        {{$ctrl.ejercicio5}}
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- End Componente Contratos -->

@@ -20,6 +20,9 @@ app.config(function ($routeProvider) {
     .when('/contratos', {
       template: '<componente-contratos></componente-contratos>'
     })
+    .when('/promesas', {
+      templateUrl: 'parciales/promesas.html'
+    })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'
     })

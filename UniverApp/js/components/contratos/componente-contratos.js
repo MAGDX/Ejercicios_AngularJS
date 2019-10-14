@@ -8,8 +8,7 @@ component('componenteContratos', { // nombre componente => para usarlo <componen
 
     $self = this;
 
-    $self.contratos = {};
-    $self.tipoProducto = {};
+    $self.contratos = [];
 
     // Eventos
     this.$onInit = function () {
@@ -18,11 +17,8 @@ component('componenteContratos', { // nombre componente => para usarlo <componen
 
         $self.contratos = result.data;
 
-        $self.tipoProducto = self.contratos.filter((v,i,a)=>{
-            if(v.TIPPRODUCT == "DV"){
-              return v;
-            }
-        });
+        $self.ejercicios();
+
       }, function (result) {
         console.trace('Error al llamar al Servicio REST');
 
@@ -32,5 +28,51 @@ component('componenteContratos', { // nombre componente => para usarlo <componen
         }
       }); // End GET
     } // End onInit
+
+    /**
+     * Hacemos esta funcion para capturar los datos del ejercicio
+     */
+    this.ejercicios = function () {
+
+      // Ejercicio 1
+      $self.ejercicio1 = $self.contratos.filter(v => v.TIPPRODUCT == "KT");
+
+      // Ejercicio 2
+      $self.ejercicio2 = $self.contratos.map(e => {
+
+        let cc;
+        if (e.codContrat == undefined || e.digContrat == undefined) {
+          cc = "";
+        } else {
+          cc = e.codContrat.toString() + e.digContrat.toString();
+        }
+
+        return {
+          "codigoContrato": cc,
+          "saldo": (e.SALCONTRAT / 100)
+        }
+      }).filter(e => {
+        return (e.codigoContrato != "" && e.saldo > 0);
+      });
+
+      // Ejercicio 3
+      $self.ejercicio3 = $self.contratos.filter(v => {
+        if (v.ACCIONES != undefined) {
+          let result = v.ACCIONES.filter(e => e.clave == "SITUACION");
+          return (result.length == 1);
+        }
+        return false;
+      });
+
+      // Ejercicio 4
+      $self.ejercicio4 = $self.contratos.map(e => {
+        if (e.ACCIONES != undefined) {
+          return e.ACCIONES.map(v => v.clave);
+        }
+      });
+
+      // Ejercicio 5
+      $self.ejercicio5 = [];
+    }
   } // End Controllador
 });
