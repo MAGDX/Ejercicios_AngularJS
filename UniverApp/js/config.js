@@ -23,6 +23,12 @@ app.config(function ($routeProvider) {
     .when('/promesas', {
       templateUrl: 'parciales/promesas.html'
     })
+    .when('/servicios', {
+      templateUrl: 'parciales/servicios.html'
+    })
+    .when('/crud', {
+      templateUrl: 'parciales/crud.html'
+    })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'
     })

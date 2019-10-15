@@ -36,6 +36,18 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-pray"
             },
             {
+                "nombre": "Servicios",
+                "url": "#!/servicios",
+                "active": false,
+                "icon": "fas fa-concierge-bell"
+            },
+            {
+                "nombre": "CRUD",
+                "url": "#!/crud",
+                "active": false,
+                "icon": "fas fa-hand-middle-finger"
+            },
+            {
                 "nombre": "Creditos",
                 "url": "#!/creditos",
                 "active": false,
