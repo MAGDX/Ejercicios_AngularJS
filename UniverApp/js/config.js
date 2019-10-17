@@ -29,6 +29,19 @@ app.config(function ($routeProvider) {
     .when('/crud', {
       templateUrl: 'parciales/crud.html'
     })
+    .when('/formularios', {
+      templateUrl: 'parciales/formularios.html'
+    })
+    .when('/harrypotter', {
+      templateUrl: 'parciales/harrypotter.html'
+    })
+    .when('/harrypotter/:id', {
+      templateUrl: 'parciales/detalleHP.html'
+    })
+    .when('/detalle/:id', {
+      templateUrl: 'parciales/detalle.html',
+      controller: 'detalleController'
+    })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'
     })

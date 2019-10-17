@@ -1,0 +1,14 @@
+<div ng-controller="hpDetalleController">
+    <h2>{{personaje.name}}</h2>
+    <hr>
+    <ul>
+        <li><strong>Rol:</strong> {{personaje.role}}</li>
+        <li><strong>Escuela:</strong> {{personaje.school}}</li>
+        <li><strong>¿Es Ministr@ de Magia?</strong> {{(personaje.ministryOfMagic)?"Si":"No"}}</li>
+        <li><strong>¿Pertenece a La Orden del Fenix?</strong> {{(personaje.orderOfThePhoenix)?"Si":"No"}}</li>
+        <li><strong>¿Pertenece a El Ejercito de Dumbledore?</strong> {{(personaje.dumbledoresArmy)?"Si":"No"}}</li>
+        <li><strong>¿Es mortifago?</strong> {{(personaje.deathEater)?"Si":"No"}}</li>
+        <li><strong>Estatus de Sangre:</strong> {{personaje.bloodStatus}}</li>
+        <li><strong>Especie:</strong> {{personaje.species}}</li>
+    </ol>
+</div>

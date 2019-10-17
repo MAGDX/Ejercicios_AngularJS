@@ -48,6 +48,18 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-hand-middle-finger"
             },
             {
+                "nombre": "Formularios",
+                "url": "#!/formularios",
+                "active": false,
+                "icon": "fab fa-wpforms" 
+            },
+            {
+                "nombre": "HP",
+                "url": "#!/harrypotter",
+                "active": false,
+                "icon": "fas fa-bolt" 
+            },
+            {
                 "nombre": "Creditos",
                 "url": "#!/creditos",
                 "active": false,

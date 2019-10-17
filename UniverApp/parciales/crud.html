@@ -1,18 +1,52 @@
-<div ng-controller="crudController">
-    <h2>Canciones</h2>
-    <hr>
+<h2>Canciones</h2>
+<hr>
 
-    <table class="table">
-        <thead class="thead-dark">
+<div ng-controller="crudController">
+
+    <button class="btn btn-info mb-2" ng-click="nuevaCancion()">Nueva canción</button>
+    
+    <span ng-show="alerta != null">
+        <componente-alerta clase="{{alerta.clase}}" texto="{{alerta.texto}}"></componente-alerta>
+    </span>
+
+    <div ng-show="cancion != null" class="border border-sm shadow p-2">
+
+        <h4>{{(cancion.id != -1)?'Modicar canción':'Nueva canción'}}</h4>
+        <div ng-show="cancion.id != -1">
+            <label>Id: </label>
+            <input class="form-control" type="text" ng-model="cancion.id" readonly><br>
+        </div>
+        <label>Nombre: </label>
+        <input class="form-control" type="text" ng-model="cancion.nombre"><br>
+        <a class="btn btn-success {{((cancion.nombre).length <= 2 || (cancion.nombre).length >= 150)?'disabled':''}}"
+            ng-show="cancion.id == -1" ng-click="crear(cancion.nombre);">Crear</a>
+        <a class="btn btn-success  {{((cancion.nombre).length <= 2 || (cancion.nombre).length >= 150)?'disabled':''}}"
+            ng-show="cancion.id != -1" ng-click="modificar(cancion);">Guardar</a>
+        <a class="btn btn-outline-danger" ng-click="cancion = null">Cancelar</a>
+        <span class="ml-3 text-danger"
+            ng-show="((cancion.nombre).length <= 2 || (cancion.nombre).length >= 150)">Escribe un nombre de cancion
+            válido (3-150 caracteres)</span>
+
+    </div>
+
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Cancion</th>
+                <th scope="col" ng-click="ordenar('id')">Id <span ng-show="orden == 'id'"><i
+                            class="fas fa-sort-{{iconoOrden}}"></i></span> </th>
+                <th scope="col" ng-click="ordenar('nombre')">Nombre <span ng-show="orden == 'nombre'"><i
+                            class="fas fa-sort-{{iconoOrden}}"></i></span></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="align-middle">{{cancion.id}}</td>
-                <td class="align-middle">{{cancion.nombre}}</td>
+            <tr ng-repeat="cancion in canciones | orderBy: orden : descendente ">
+                <td>{{cancion.id}}</th>
+                <td>{{cancion.nombre}}
+                    <div class="float-right">
+                        <i class=" text-info far fa-edit" ng-click="detalle(cancion.id)"></i>
+                        <i class="text-danger far fa-trash-alt" ng-click="eliminar(cancion.id)"></i>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>

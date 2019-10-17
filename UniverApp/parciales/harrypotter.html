@@ -1,0 +1,10 @@
+<h2>Harry Potter: The API</h2>
+<hr>
+
+<div ng-controller="hpController">
+    <ul class="row">
+        <li class="col-4" ng-repeat="personaje in personajes">
+            <a ng-href="#!/harrypotter/{{personaje._id}}">{{personaje.name}}</a>
+        </li>
+    </ul>
+</div>
