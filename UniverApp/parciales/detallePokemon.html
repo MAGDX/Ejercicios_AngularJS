@@ -1,0 +1,15 @@
+<div ng-controller="pokemonDetalleController">
+    <h2>{{pokemon.name}}</h2>
+    <hr>
+    <ul>
+        <li>School: <strong>{{pokemon.school}}</strong></li>
+        <li>Role: <strong>{{pokemon.role | capitalizar}}</strong></li>
+        <li>House: <strong>{{pokemon.house}}</strong></li>
+        <li>Works in The Ministry of Magic? <strong>{{(pokemon.ministryOfMagic)?"Yes":"No"}}</strong></li>
+        <li>Does it belong to The Order of the Phoenix? <strong>{{(pokemon.orderOfThePhoenix)?"Yes":"No"}}</strong></li>
+        <li>Does it belong to The Dumbledore's Army? <strong>{{(pokemon.dumbledoresArmy)?"Yes":"No"}}</strong></li>
+        <li>Is a Death Eater? <strong>{{(pokemon.deathEater)?"Yes":"No"}}</strong></li>
+        <li>Blood status: <strong>{{pokemon.bloodStatus | capitalizar}}</strong></li>
+        <li>Species: <strong>{{pokemon.species | capitalizar}}</strong></li>
+    </ol>
+</div>

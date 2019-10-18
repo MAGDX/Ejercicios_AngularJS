@@ -60,6 +60,12 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-bolt" 
             },
             {
+                "nombre": "Pokemon",
+                "url": "#!/pokemon",
+                "active": false,
+                "icon": "fas fa-pastafarianism" 
+            },
+            {
                 "nombre": "Creditos",
                 "url": "#!/creditos",
                 "active": false,

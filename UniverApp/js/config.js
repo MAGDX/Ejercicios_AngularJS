@@ -38,6 +38,12 @@ app.config(function ($routeProvider) {
     .when('/harrypotter/:id', {
       templateUrl: 'parciales/detalleHP.html'
     })
+    .when('/pokemon', {
+      templateUrl: 'parciales/pokemon.html'
+    })
+    .when('/pokemon/:id', {
+      templateUrl: 'parciales/detallePokemon.html'
+    })
     .when('/detalle/:id', {
       templateUrl: 'parciales/detalle.html',
       controller: 'detalleController'
