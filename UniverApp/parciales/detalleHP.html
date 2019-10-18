@@ -2,14 +2,14 @@
     <h2>{{personaje.name}}</h2>
     <hr>
     <ul>
-        <li><strong>Rol:</strong> {{personaje.role}}</li>
-        <li><strong>Escuela:</strong> {{personaje.school}}</li>
-        <li><strong>Casa:</strong> {{personaje.house}}</li>
-        <li><strong>¿Es Ministr@ de Magia?</strong> {{(personaje.ministryOfMagic)?"Si":"No"}}</li>
-        <li><strong>¿Pertenece a La Orden del Fenix?</strong> {{(personaje.orderOfThePhoenix)?"Si":"No"}}</li>
-        <li><strong>¿Pertenece a El Ejercito de Dumbledore?</strong> {{(personaje.dumbledoresArmy)?"Si":"No"}}</li>
-        <li><strong>¿Es mortifago?</strong> {{(personaje.deathEater)?"Si":"No"}}</li>
-        <li><strong>Estatus de Sangre:</strong> {{personaje.bloodStatus}}</li>
-        <li><strong>Especie:</strong> {{personaje.species}}</li>
+        <li>School: <strong>{{personaje.school}}</strong></li>
+        <li>Role: <strong>{{personaje.role | capitalizar}}</strong></li>
+        <li>House: <strong>{{personaje.house}}</strong></li>
+        <li>Works in The Ministry of Magic? <strong>{{(personaje.ministryOfMagic)?"Yes":"No"}}</strong></li>
+        <li>Does it belong to The Order of the Phoenix? <strong>{{(personaje.orderOfThePhoenix)?"Yes":"No"}}</strong></li>
+        <li>Does it belong to The Dumbledore's Army? <strong>{{(personaje.dumbledoresArmy)?"Yes":"No"}}</strong></li>
+        <li>Is a Death Eater? <strong>{{(personaje.deathEater)?"Yes":"No"}}</strong></li>
+        <li>Blood status: <strong>{{personaje.bloodStatus | capitalizar}}</strong></li>
+        <li>Species: <strong>{{personaje.species | capitalizar}}</strong></li>
     </ol>
 </div>

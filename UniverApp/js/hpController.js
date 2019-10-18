@@ -1,4 +1,4 @@
-app.controller('hpController', ['$scope', '$routeParams', 'hpProvider', function ($scope, $routeParams, hpProvider) {
+app.controller('hpController', ['$scope', '$routeParams', 'hpProvider', function ($scope, $routeParams, hpProvider, capitalize) {
     console.trace('hpController');
 
     $scope.id = $routeParams.id;

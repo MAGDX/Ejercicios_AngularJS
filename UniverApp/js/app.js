@@ -42,3 +42,20 @@ app.service("rectanguloService", ['tamanoInicialRectangulo', Rectangulo]);
 // Providers
 app.service('cancionProvider', CancionProvider);
 app.service('hpProvider', HPProvider);
+
+// Definir filtros personalizados en la app
+app.filter("capitalizar", function(){
+    return function (cadena, nInicial, nFinal){
+        if(cadena != undefined && typeof cadena == 'string'){
+            if(nInicial == undefined){
+                nInicial = 0;
+                if(nFinal == undefined){
+                    nFinal = 1;
+                }
+            }
+            return cadena.slice(0, nInicial) + cadena.slice(nInicial, nFinal).toUpperCase() + cadena.slice(nFinal);
+        }else{
+            return "";
+        }
+    }
+});

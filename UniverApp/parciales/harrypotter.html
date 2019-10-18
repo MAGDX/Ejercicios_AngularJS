@@ -2,9 +2,26 @@
 <hr>
 
 <div ng-controller="hpController">
-    <ul class="row">
-        <li class="col-4" ng-repeat="personaje in personajes">
-            <a ng-href="#!/harrypotter/{{personaje._id}}">{{personaje.name}}</a>
-        </li>
-    </ul>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th ng-click="busqueda = 'name'" scope="col">Name</th>
+                <th ng-click="busqueda = 'school'" scope="col">School</th>
+                <th ng-click="busqueda = 'house'" scope="col">House</th>
+                <th ng-click="busqueda = 'bloodStatus'" scope="col">Estatus de Sangre</th>
+                <th ng-click="busqueda = 'species'" scope="col">Especie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="personaje in personajes | orderBy : busqueda">
+                <td>
+                    <a ng-href="#!/harrypotter/{{personaje._id}}">{{personaje.name}}</a>
+                </td>
+                <td>{{personaje.school}}</td>
+                <td>{{personaje.house}}</td>
+                <td>{{personaje.bloodStatus | capitalizar}}</td>
+                <td>{{personaje.species | capitalizar}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
