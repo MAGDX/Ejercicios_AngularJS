@@ -1,6 +1,33 @@
 <h2>Creditos</h2>
-<hr>
+<br>
+<div class="mb-5" ng-controller="creditosCtrl as cc">
+    <h4>{{creditos.autor | uppercase}}</h4>
+    <hr>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio neque ab incidunt itaque ad voluptatum ducimus consequatur ratione! Vel et commodi provident accusantium consequatur eligendi error. Dolorum blanditiis voluptas pariatur.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis praesentium explicabo reiciendis officiis enim optio obcaecati sapiente voluptatem commodi accusamus, sequi nihil impedit modi aperiam eaque vero, esse veritatis?</p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet iste itaque aliquam molestias nulla! Voluptates, modi nihil molestias voluptatem voluptas, maiores eaque iusto sint eum laborum dolorem dignissimos libero!</p>
+    <div class="row mb-3">
+
+        <!-- Div que contiene la imagen del creditos -->
+        <div class="col-sm-3">
+            <section class="panel">
+                <div class="panel-body" align="center">
+                    <img ng-src="{{creditos.imagen}}" class="rounded-circle" alt="" width="150px" height="150px">
+                </div>
+            </section>
+        </div>
+
+        <!-- Div, donde se mostrará la bio del creditos -->
+        <div class="col-sm-9">
+            <section class="panel">
+                <div class="panel-body">
+                    <p><strong>Nombre:</strong> {{creditos.autor}} años</p>
+                    <p><strong>Edad:</strong> {{creditos.edad}} años</p>
+                    <p><strong>Bio:</strong> {{creditos.bio}}</p>
+                    <p>
+                        <strong>Agradecimientos: </strong>
+                        Jon Antolín, Borja García, Eder Ibáñez, Mounir Chermou y Manu Carrillo
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div><!-- End Row -->
+</div><!-- End creditosCtrl -->

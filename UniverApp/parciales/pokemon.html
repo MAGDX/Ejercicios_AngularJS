@@ -5,20 +5,34 @@
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
-                <th ng-click="busqueda = 'n'" scope="col">Nº</th>
-                <th scope="col">Foto</th>
-                <th ng-click="busqueda = 'name'" scope="col">Nombre</th>
-                <th ng-click="busqueda = 'type'" scope="col">Tipo</th>
+                <th class="align-middle">#</th>
+                <th class="align-middle text-center" scope="col">Foto</th>
+                <th class="align-middle">Nombre</th>
+                <th class="align-middle text-center">Tipo</th>
+                <th class="align-middle">Peso</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="pokemon in pokemons | orderBy : busqueda">
-                <td>
-                    <a ng-href="#!/pokemon/{{pokemon._id}}">{{pokemon.n}}</a>
+            <tr class="p-0" ng-repeat="pokemon in pokemons">
+                <td width="10px" height="10px" class="align-middle text-center p-0">
+                    {{pokemon.id}}
                 </td>
-                <td>{{pokemon.picture}}</td>
-                <td>{{pokemon.name}}</td>
-                <td ng-repeat="tipo in tipos">{{pokemon.type | capitalizar}}</td>
+                <td width="100px" height="100px" class="text-center">
+                    <img width="75px" height="75px" ng-src="{{pokemon.sprites.front_default}}"></img>
+                </td>
+                <td width="100px" height="100px" class="align-middle p-0">
+                    {{pokemon.name | capitalizar}}
+                </td>
+                <td width="100px" height="100px" class="align-middle text-center p-0">
+                    <ul>
+                        <li class="align-middle text-center" ng-repeat="tipo in pokemon.types">
+                            {{tipo.type.name | capitalizar}}
+                        </li>
+                    </ol>
+                </td>
+                <td width="100px" height="100px" class="align-middle p-0">
+                    {{pokemon.weight}}
+                </td>
             </tr>
         </tbody>
     </table>

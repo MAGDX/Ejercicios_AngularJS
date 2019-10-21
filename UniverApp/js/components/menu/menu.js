@@ -12,31 +12,31 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-home"
             },
             {
-                "nombre": "Frutas",
+                "nombre": "Fruits",
                 "url": "#!/frutas",
                 "active": false,
                 "icon": "fab fa-apple"
             },
             {
-                "nombre": "Componentes",
+                "nombre": "Components",
                 "url": "#!/componentes",
                 "active": false,
                 "icon": "fas fa-window-restore"
             },
             {
-                "nombre": "Programación Funcional",
+                "nombre": "Program. Funcional",
                 "url": "#!/programacion-funcional",
                 "active": false,
                 "icon": "fas fa-laptop-code"
             },
             {
-                "nombre": "Promesas",
+                "nombre": "Promises",
                 "url": "#!/promesas",
                 "active": false,
                 "icon": "fas fa-pray"
             },
             {
-                "nombre": "Servicios",
+                "nombre": "Services",
                 "url": "#!/servicios",
                 "active": false,
                 "icon": "fas fa-concierge-bell"
@@ -48,7 +48,7 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-hand-middle-finger"
             },
             {
-                "nombre": "Formularios",
+                "nombre": "Forms",
                 "url": "#!/formularios",
                 "active": false,
                 "icon": "fab fa-wpforms" 
@@ -66,7 +66,7 @@ component('componenteMenu', { // nombre componente => para usarlo <componente-me
                 "icon": "fas fa-pastafarianism" 
             },
             {
-                "nombre": "Creditos",
+                "nombre": "Credits",
                 "url": "#!/creditos",
                 "active": false,
                 "icon": "fab fa-creative-commons"

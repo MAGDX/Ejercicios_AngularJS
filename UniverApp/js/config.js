@@ -48,6 +48,27 @@ app.config(function ($routeProvider) {
       templateUrl: 'parciales/detalle.html',
       controller: 'detalleController'
     })
+    .when('/ejercicios/', {
+      templateUrl: 'ejercicios/index.html'
+    })
+    .when('/ejercicio1/', {
+      templateUrl: 'ejercicios/ejercicio1/index.html'
+    })
+    .when('/ejercicio2/', {
+      templateUrl: 'ejercicios/ejercicio2/index.html'
+    })
+    .when('/ejercicioComponentes/', {
+      templateUrl: 'ejercicios/ejerciciocomponentes/index.html'
+    })
+    .when('/ejercicioCrud/', {
+      templateUrl: 'ejercicios/ejercicioCrudTareas/index.html'
+    })
+    .when('/evaluacion1/', {
+      templateUrl: 'ejercicios/evaluacion1/index.html'
+    })
+    .when('/calificacionesPepe/', {
+      templateUrl: 'ejercicios/ejerciciocomponentes/calificaciones_pepe.html'
+    })
     .when('/creditos', {
       templateUrl: 'parciales/creditos.html'
     })

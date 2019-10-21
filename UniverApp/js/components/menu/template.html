@@ -3,12 +3,31 @@
   <a class="navbar-brand" href="#">
     <img width="117" height="30" src="img/angularjs.svg" alt="AngularJS">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item" ng-click="cambiarActivo(ruta)" ng-repeat="ruta in rutas" ng-class="(ruta.active)?'active':''">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#!/ejercicios/" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars"></i> Ej. Anteriores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#!/ejercicios/">Todos los Ejercicios</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#!/ejercicio1">Ejercicio 1</a>
+          <a class="dropdown-item" href="#!/ejercicio2">Ejercicio 2</a>
+          <a class="dropdown-item" href="#!/ejercicioComponentes">Ejercicio Componentes</a>
+          <a class="dropdown-item" href="#!/ejercicioCrud">Ejercicio Crud Tareas</a>
+          <a class="dropdown-item" href="ejercicios/EjercicioHttpRequest/index.html">Ejercicio HTTP Request</a>
+          <a class="dropdown-item" href="#!/evaluacion1">Evaluacion 1</a>
+          <a class="dropdown-item" href="ejercicios/ips/index.html">Ejercicio IPS</a>
+        </div>
+      </li>
+      <li class="nav-item" ng-click="cambiarActivo(ruta)" ng-repeat="ruta in rutas"
+        ng-class="(ruta.active)?'active':''">
         <a class="nav-link" ng-href="{{ruta.url}}"><i class="{{ruta.icon}}"></i> {{ruta.nombre}}</a>
       </li>
     </ul>

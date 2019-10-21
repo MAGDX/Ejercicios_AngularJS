@@ -1,0 +1,50 @@
+<div id="tareas">
+    <!-- Listado Tareas -->
+    <div class="d-flex align-items-center p-2 mb-2 form-row rounded">
+        <input class="form-control mr-2 col-4" ng-model="$ctrl.descTarea" type="text"
+            placeholder="Escriba la descripcion de la nueva tarea" autofocus>
+        <button class="btn btn-primary col-2" ng-focus="" ng-click="$ctrl.crearTarea()">+ Nueva tarea</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="offset-2 mr-2 text-light"><strong>Filtrar por:</strong></span>
+        <select id="combo" class="custom-select mr-2 col-2" ng-model="busqueda.completed">
+            <option value="">Todas las tareas</option>
+            <option value="true">Tareas completadas</option>
+            <option value="false">Tareas pendientes</option>
+        </select>
+    </div>
+
+    <input class="form-control mb-2 col-4" ng-model="busqueda.task" type="text"
+        placeholder="Escriba la descripcion de la tarea a buscar">
+
+    {{$ctrl.mensajeValidacion}}
+
+    <p ng-show="$ctrl.tareas.length == 0">Cargando tareas...</p>
+
+    <!-- Lista de tareas -->
+    <ul class="list-group">
+        <!-- For each de cada tarea -->
+        <li class="list-group-item translucido" ng-repeat="tarea in $ctrl.tareas | filter:busqueda">
+            <!-- Distintivo que enumera las tareas -->
+            <span class="badge badge-{{(tarea.completed)?'secondary':'primary'}}">{{tarea.id}}</span>
+
+            <!-- Input donde se muestra la descripcion de la tarea -->
+            <input type="text" size="100"
+                class="translucido {{(tarea.completed)?'tachado':''}} border{{(mostrarEditar)?'':'-0'}}"
+                ng-model="tarea.task" ng-readonly="!mostrarEditar">
+
+            <!-- Botones de Guardar o Cancelar la edición -->
+            <button class="badge badge-primary" ng-show="mostrarEditar"
+                ng-click="$ctrl.editarTarea(tarea)">Guardar</button>
+            <button class="badge badge-warning" ng-show="mostrarEditar"
+                ng-click="mostrarEditar = !mostrarEditar; tarea.task = oldDesc">Cancelar</button>
+
+            <!-- Iconos para eliminar, editar o marcar como completado -->
+            <i class="text-danger fas fa-trash-alt float-right" ng-click="$ctrl.eliminarTarea(tarea)"></i>
+            <i class="text-secondary fas fa-edit float-right mr-2"
+                ng-click="mostrarEditar = !mostrarEditar; oldDesc = tarea.task"></i>
+            <i class="text-{{(tarea.completed)?'success':'warning'}} far fa{{(tarea.completed)?'-check':''}}-square float-right mr-2"
+                ng-click="$ctrl.completarTarea(tarea)"></i>
+        </li>
+    </ul>
+    <!-- End Listado Tareas -->
+</div>

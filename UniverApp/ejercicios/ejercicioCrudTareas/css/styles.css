@@ -1,0 +1,30 @@
+#tareas {
+    background-image: url(../images/bg-img.jpg);
+    background-color: #bcf1e9;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#tareas h1 {
+    color: rgb(248, 249, 250);
+}
+
+#tareas i{
+    cursor: pointer;
+}
+
+#tareas .tachado{
+    text-decoration: line-through;
+    color: grey;
+}
+
+#tareas .translucido{
+    background-color: rgba(248, 249, 250, 0.6);
+}
+
+#tareas .translucido input{
+    background-color: rgba(248, 249, 250, 0);
+}

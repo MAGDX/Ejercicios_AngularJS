@@ -27,3 +27,7 @@ td a:hover {
     text-decoration: none;
     color:darkblue;
 }
+
+td li{
+    list-style:none;
+}

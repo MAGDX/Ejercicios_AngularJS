@@ -1,5 +1,6 @@
 {
-  "frutas": [{
+  "frutas": [
+    {
       "id": 1,
       "precio": 2.3,
       "nombre": "Pera",
@@ -70,7 +71,55 @@
       "icon": "tomate.jpg"
     }
   ],
-  "alumnos": [{
+  "tareas": [
+    {
+      "id": 1,
+      "completed": true,
+      "task": "Pagar multa... otra vez"
+    },
+    {
+      "id": 2,
+      "completed": true,
+      "task": "Tomar mango loco a las 11"
+    },
+    {
+      "id": 3,
+      "completed": true,
+      "task": "Ducharse a las 7, guarro"
+    },
+    {
+      "id": 4,
+      "completed": true,
+      "task": "Poner bonita imagen background"
+    },
+    {
+      "id": 5,
+      "completed": false,
+      "task": "Poner autofocus a la caja de text"
+    },
+    {
+      "completed": false,
+      "task": "Terminar eliminar",
+      "id": 7
+    },
+    {
+      "completed": true,
+      "task": "Poder marcar tarea completada",
+      "id": 9
+    },
+    {
+      "completed": true,
+      "task": "Buscar por nombre",
+      "id": 10
+    },
+    {
+      "completed": true,
+      "task": "Filtrar por tareas completadas o pendientes",
+      "id": 11
+    }
+  ],
+  "alumnos": [
+    {
       "id": 1,
       "nombre": "Veronic",
       "nota": 0,
@@ -101,7 +150,8 @@
       "calificacion": "Sobresaliente"
     }
   ],
-  "contratos": [{
+  "contratos": [
+    {
       "DESAGRUP": "",
       "TIPPRODUCT": "",
       "CODTERMINA": "",
@@ -168,7 +218,8 @@
       "idColumn": "9310021511",
       "formContrato": "931002151-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -252,7 +303,8 @@
       "idColumn": "3910028231",
       "formContrato": "391002823-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -300,7 +352,8 @@
       "idColumn": "3910406904",
       "formContrato": "391040690-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -348,7 +401,8 @@
       "idColumn": "3910406914",
       "formContrato": "391040691-0",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -396,7 +450,8 @@
       "idColumn": "3910406924",
       "formContrato": "391040692-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -444,7 +499,8 @@
       "idColumn": "3920029194",
       "formContrato": "392002919-2",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -492,7 +548,8 @@
       "idColumn": "3920029214",
       "formContrato": "392002921-3",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -576,7 +633,8 @@
       "idColumn": "6044770000088881",
       "formContrato": "604477000008888-3",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -726,10 +784,12 @@
       "idColumn": "13641",
       "formContrato": "1364-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Datos básicos",
-        "clave": "DATOS_BASICOS"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 20
@@ -819,10 +879,12 @@
       "idColumn": "1730786091",
       "formContrato": "173078609-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Datos básicos",
-        "clave": "DATOS_BASICOS"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 170084850,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -1038,10 +1100,12 @@
       "idColumn": "6780005701",
       "formContrato": "678000570-2",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 1210
@@ -1239,7 +1303,8 @@
       "idColumn": "4610091731",
       "formContrato": "461009173-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Movimientos",
           "clave": "MOVIMIENTOS"
         },
@@ -1489,7 +1554,8 @@
       "idColumn": "73043831120",
       "formContrato": "730438311-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1617,10 +1683,12 @@
       "idColumn": "104001",
       "formContrato": "10400-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 1370
@@ -1692,7 +1760,8 @@
       "idColumn": "14000018423",
       "formContrato": "140000184-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1740,7 +1809,8 @@
       "idColumn": "14000028023",
       "formContrato": "140000280-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1788,7 +1858,8 @@
       "idColumn": "14000032523",
       "formContrato": "140000325-2",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1836,7 +1907,8 @@
       "idColumn": "14000032423",
       "formContrato": "140000324-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1884,7 +1956,8 @@
       "idColumn": "14000065723",
       "formContrato": "140000657-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1932,7 +2005,8 @@
       "idColumn": "14000018223",
       "formContrato": "140000182-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -1980,7 +2054,8 @@
       "idColumn": "14001023923",
       "formContrato": "140010239-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2028,7 +2103,8 @@
       "idColumn": "14001031423",
       "formContrato": "140010314-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2076,7 +2152,8 @@
       "idColumn": "14001043723",
       "formContrato": "140010437-3",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2124,7 +2201,8 @@
       "idColumn": "14001043823",
       "formContrato": "140010438-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2172,7 +2250,8 @@
       "idColumn": "14001039923",
       "formContrato": "140010399-2",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2220,7 +2299,8 @@
       "idColumn": "14001071423",
       "formContrato": "140010714-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2268,7 +2348,8 @@
       "idColumn": "14000066723",
       "formContrato": "140000667-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2316,7 +2397,8 @@
       "idColumn": "14001038323",
       "formContrato": "140010383-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -2382,10 +2464,12 @@
       "idColumn": "1410008061",
       "formContrato": "141000806-3",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2421,10 +2505,12 @@
       "idColumn": "1410020321",
       "formContrato": "141002032-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2460,10 +2546,12 @@
       "idColumn": "1410032571",
       "formContrato": "141003257-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2499,10 +2587,12 @@
       "idColumn": "1410041501",
       "formContrato": "141004150-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2538,10 +2628,12 @@
       "idColumn": "1410051331",
       "formContrato": "141005133-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2577,10 +2669,12 @@
       "idColumn": "1410108891",
       "formContrato": "141010889-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2616,10 +2710,12 @@
       "idColumn": "1410117351",
       "formContrato": "141011735-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2655,10 +2751,12 @@
       "idColumn": "1410138311",
       "formContrato": "141013831-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2694,10 +2792,12 @@
       "idColumn": "1410139711",
       "formContrato": "141013971-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2733,10 +2833,12 @@
       "idColumn": "1410139721",
       "formContrato": "141013972-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2772,10 +2874,12 @@
       "idColumn": "1410141321",
       "formContrato": "141014132-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2811,10 +2915,12 @@
       "idColumn": "1410171351",
       "formContrato": "141017135-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2850,10 +2956,12 @@
       "idColumn": "1410192351",
       "formContrato": "141019235-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2889,10 +2997,12 @@
       "idColumn": "1410133521",
       "formContrato": "141013352-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 20
@@ -2964,7 +3074,8 @@
       "idColumn": "1800010291",
       "formContrato": "180001029-7",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Datos básicos",
           "clave": "DATOS_BASICOS"
         },
@@ -3012,7 +3123,8 @@
       "idColumn": "1800014511",
       "formContrato": "180001451-7",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Datos básicos",
           "clave": "DATOS_BASICOS"
         },
@@ -3060,7 +3172,8 @@
       "idColumn": "1800110684",
       "formContrato": "180011068-2",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Datos básicos",
           "clave": "DATOS_BASICOS"
         },
@@ -3162,7 +3275,8 @@
       "idColumn": "1690002391",
       "formContrato": "169000239-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
+      "ACCIONES": [
+        {
           "titulo": "Situación",
           "clave": "SITUACION"
         },
@@ -4056,10 +4170,12 @@
       "idColumn": "5600001231",
       "formContrato": "560000123-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Situación",
-        "clave": "SITUACION"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 1220
@@ -4293,10 +4409,12 @@
       "idColumn": "6518004021",
       "formContrato": "651800402-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Datos básicos",
-        "clave": "DATOS_BASICOS"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 20
@@ -4386,10 +4504,12 @@
       "idColumn": "3800760182",
       "formContrato": "380076018-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Datos básicos",
-        "clave": "DATOS_BASICOS"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -4425,10 +4545,12 @@
       "idColumn": "3800751392",
       "formContrato": "380075139-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Datos básicos",
-        "clave": "DATOS_BASICOS"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -4518,10 +4640,12 @@
       "idColumn": "6761002231",
       "formContrato": "676100223-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{
-        "titulo": "Datos básicos",
-        "clave": "DATOS_BASICOS"
-      }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 0

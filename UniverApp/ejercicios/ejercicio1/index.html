@@ -1,0 +1,60 @@
+<h1>Wellcome to HELL: AngularJS</h1>
+<main class="container">
+    <h2>Filtros : Filters</h2>
+
+    <hr>
+
+    <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">Documentation</a>
+
+    <p>
+        <ul class="list-group">
+            <li class="list-group-item"><span class="badge badge-primary">uppercase</span> {{ 'uppercase' | uppercase }}
+            </li>
+            <li class="list-group-item"><span class="badge badge-primary">lowercase</span> {{ 'LOWERCASE' | lowercase }}
+            </li>
+            <li class="list-group-item"><span class="badge badge-primary">date</span> {{ '1288323623006' | date }}</li>
+            <li class="list-group-item"><span class="badge badge-primary">date:medium</span>
+                {{ '1288323623006' | date:'medium' }}</li>
+            <li class="list-group-item"><span class="badge badge-primary">date</span>
+                {{ '1288323623006' | date:'dd/MM/yyyy' }}</li>
+            <li class="list-group-item"><span class="badge badge-primary">number:0</span>
+                {{ '0004556263.5671678' | number:0}}</li>
+            <li class="list-group-item"><span class="badge badge-primary">number:4</span>
+                {{ '-0004556263.5671678' | number:4}}</li>
+            <li class="list-group-item"><span class="badge badge-primary">currency</span> {{ 1234.56 | currency }}</li>
+        </ul>
+    </p>
+
+    <h2>Directiva ng-model</h2>
+
+    <p>
+        Su nombre: {{nombre}}
+        <br>
+        <input class="form-control" type="text" ng-model="nombre" placeholder="Dime tu nombre">
+    </p>
+
+    <p>
+        Seleccione pais: {{pais}}
+        <select class="form-control" ng-model="pais">
+            <option value="1">España</option>
+            <option value="2">Pais Vasco</option>
+            <option value="3">Cataluña</option>
+        </select>
+    </p>
+
+    <p>Seleccione genero: {{genero}}</p>
+    <p>
+        <input type="radio" ng-model="genero" value="M">Masculino
+        <input type="radio" ng-model="genero" value="F">Femenino
+        <input type="radio" ng-model="genero" value="I">Indefinido
+    </p>
+
+    <p>Tus gustos: g1: {{g1}} g2: {{g2}} g3: {{g3}} g4: {{g4}} g5: {{g5}}</p>
+    <p>
+        <input type="checkbox" ng-model="g1">Musica<br>
+        <input type="checkbox" ng-model="g2">Bromas<br>
+        <input type="checkbox" ng-model="g3">Animales<br>
+        <input type="checkbox" ng-model="g4">Lectura<br>
+        <input type="checkbox" ng-model="g5">Gaming<br>
+    </p>
+</main>

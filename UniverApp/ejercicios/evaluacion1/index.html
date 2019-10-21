@@ -1,0 +1,24 @@
+<h1>Evaluacion</h1>
+
+<h3>Angular 101</h3>
+
+<hr>
+
+<p>
+    Nombre completo:
+    <input type="text" class="form-control" ng-model="nombre" placeholder="Inserte su nombre">
+</p>
+
+<p>
+    Lugar de trabajo:
+    <input type="text" class="form-control" ng-model="trabajo" placeholder="Inserte su lugar de trabajo">
+</p>
+
+<p>
+    Salario en Euros:
+    <input type="text" class="form-control" ng-model="salario" placeholder="Inserte su salario en euros">
+</p>
+
+<p>Nombre: {{nombre | uppercase}}</p>
+<p>Lugar de trabajo: {{trabajo | lowercase}}</p>
+<p>Con un salario de: {{salario | currency:"€"}}</p>

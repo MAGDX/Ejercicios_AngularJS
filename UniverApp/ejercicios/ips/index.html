@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="ejemplosApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Detectando IPs</title>
+
+
+    <!-- Incluir Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Incluir Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Incluir AngularJS -->
+    <script src="js/lib/angular.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container" ng-controller="mainCtrl">
+
+        <a class="btn btn-primary mt-2 mb-3" href="/UniverApp/index.html#!/ejercicios/">
+            <i class="fas fa-arrow-left"></i> Volver al Proyecto
+        </a>
+
+        <h1>Detectar IPs</h1>
+        <h4>Manejo de recursos online</h4>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary mb-3" ng-click="localizame()">Localizame</button>
+                <ul class="list-group">
+                    <li class="list-group-item">IP: <strong>{{geo.geoplugin_request}}</strong></li>
+                    <li class="list-group-item">Ciudad: <strong>{{geo.geoplugin_city}}</strong></li>
+                    <li class="list-group-item">Región: <strong>{{geo.geoplugin_region}}</strong></li>
+                    <li class="list-group-item">Latitud: <strong>{{geo.geoplugin_latitude}}</strong></li>
+                    <li class="list-group-item">Longitud: <strong>{{geo.geoplugin_longitude}}</strong></li>
+                    <li class="list-group-item">Moneda: <strong>{{geo.geoplugin_currencyCode}}</strong></li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <style>
+                    /* Always set the map height explicitly to define the size of the div
+                             * element that contains the map. */
+                    #map {
+                        height: 100%;
+                    }
+                </style>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div><!-- fin del listadoCtrl -->
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- API Google Maps sin Key-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+</body>
+
+</html>

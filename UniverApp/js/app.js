@@ -42,7 +42,7 @@ app.service("rectanguloService", ['tamanoInicialRectangulo', Rectangulo]);
 // Providers
 app.service('cancionProvider', CancionProvider);
 app.service('hpProvider', HPProvider);
-app.service('pokemonProvider', PokemonProvider);
+app.service('pokemonProvider', pokemonProvider);
 
 // Definir filtros personalizados en la app
 app.filter("capitalizar", function(){
